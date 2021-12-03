@@ -13,7 +13,7 @@ const useStyle = makeStyles((theme) => ({
         display : "flex"
     },
     grow: {
-        flexgrow :1
+        flexgrow :0
     },
     avatarSize : {
         width : 40,
@@ -30,17 +30,14 @@ const BarSesion = () => {
             </IconButton>
 
             <Typography variant="h6">🏥 Clínica ELP</Typography>
-            <div className={classes.grow}>
-                <Button color="inherit">
-                    Salir
-                </Button>
-                <Button color="inherit">
-                    {"Nombre de Usuario"}
-                </Button>
-                <Avatar src={logo}> 
+            {/* Esta vrg no sirveeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/}
+            <Button color="inherit" href="../components/resultados/Ordenes">
+                Ordenes
+            </Button>
+            <Button color="inherit" href="../components/resultados/Resultados">
+                Resultados
+            </Button>
 
-                </Avatar>
-            </div>
 
             <div className={classes.seccionMobile}>
                 <IconButton color="inherit">
